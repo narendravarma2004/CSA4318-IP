@@ -34,3 +34,11 @@ function next() {
 function prev() {
 	showSlide(index - 1);
 }
+// blood.js
+
+// Function to handle logout
+function logout() {
+    window.location.href = 'index.html'; // Redirect to index.html
+}
+
+// ... other functions ...
