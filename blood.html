@@ -16,19 +16,19 @@
 
 <body>
 	<header class="header">
-		<a href="#" class="logo"> Bakery </a>
+		<a href="#" class="logo"> CAKEIRIS </a>
 		<nav class="navbar">
 			<a href="product.html">Shop</a>
 			<a href="about.html">About</a>
 			<a href="contact.html">Contact</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Profile</a>
 		</nav>
 		<div class="icons">
 			<div id="menu-btn" class="fas fa-bars"></div>
-			<div id="search-btn" class="fas fa-search"></div>
-			<div id="cart-btn" class="fas fa-shopping-cart"></div>
-			<div id="login-btn" class="fas fa-user"></div>
+			<div id="cart-btn" class="fas fa-shopping-cart" onclick="showCart()"></div>
+			<div id="logout-btn" class="fa fa-sign-out" style="font-size: 24px;" onclick="logout()"></div>
 		</div>
+		
 		<div class="hamburger" id="hamburger">
 			<div class="line"></div>
 			<div class="line"></div>
@@ -126,42 +126,41 @@
 
 	<section class="category">
 
-		<h1 class="title"> All <span>categories</span> <a href="#">view all >></a> </h1>
+		<h1 class="title"> <span>categories</span> <a href="#">view all >></a> </h1>
 
 		<div class="box-container">
 
-			<a href="#" class="box">
+			<a href="product.html" class="box">
 				<img decoding="async"
-					src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240301113952/image3_100.png" alt="">
+					src="cup.jpeg"" alt="">
 				<h3>fresh cupcake</h3>
 			</a>
 
-			<a href="#" class="box">
+			<a href="product.html" class="box">
 				<img decoding="async"
 					src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240301113842/image8_100.png" alt="">
+"cookie.jpeg" alt="">
 				<h3>cookies</h3>
 			</a>
 
-			<a href="#" class="box">
+			<a href="product.html" class="box">
 				<img decoding="async"
 					src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240301113914/image6_100.png" alt="">
+"brown.jpg" alt="">
 				<h3>brown bread</h3>
 			</a>
 
-			<a href="#" class="box">
+			<a href="product.html" class="box">
 				<img decoding="async"
 					src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240301113952/image3_100.png" alt="">
+"dark.jpeg" alt="">
 				<h3>Dark chocolate</h3>
 			</a>
 
-			<a href="#" class="box">
+			<a href="product.html" class="box">
 				<img decoding="async"
 					src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240301113842/image8_100.png" alt="">
+"wheat.jpeg" alt="">
 				<h3>Wheat</h3>
 			</a>
 		</div>
@@ -183,15 +182,15 @@
 				<h3>quick links</h3>
 				<a href="#"> <i class="fas 
 				fa-arrow-right"></i> Home</a>
-				<a href="#"> <i class="fas
+				<a href="product.html"> <i class="fas
 				fa-arrow-right"></i>Shop</a>
-				<a href="#"> <i class="fas
+				<a href="about.html"> <i class="fas
 				fa-arrow-right"></i>About</a>
 				<a href="#"> <i class="fas
 				fa-arrow-right"></i> Review</a>
-				<a href="#"> <i class="fas 
+				<a href="about.html"> <i class="fas 
 				fa-arrow-right"></i>Blog</a>
-				<a href="#"> <i class="fas
+				<a href="contact.html"> <i class="fas
 				fa-arrow-right"></i>Contact</a>
 			</div>
 
@@ -200,13 +199,15 @@
 				<a href="#"> <i class="fab 
 				fa-facebook-f"></i> facebook </a>
 				<a href="#"> <i class="fab
-				fa-twitter"></i> twitter </a>
+				fa-x"></i> twitter </a>
 				<a href="#"> <i class="fab 
 				fa-instagram"></i> instagram </a>
 				<a href="#"> <i class="fab
 				fa-linkedin"></i> linkedin </a>
 				<a href="#"> <i class="fab 
 				fa-pinterest"></i> pinterest </a>
+				<a href="#"> <i class="fab 
+				fa-youtube"></i>youtube </a>
 			</div>
 
 			<div class="box">
@@ -220,7 +221,12 @@
 		</div>
 	</section>
 
-	<section class="credit">created by <span>@Geek</span></section>
+	
+    <div class="footer">
+		<center>
+        &copy; 2024 <strong>CAKEIRIS</strong>. All Rights Reserved.
+		</center>
+    </div>
 
 	<script src="blood.js" defer data-deferred="1"></script>
 </body>
