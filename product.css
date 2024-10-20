@@ -1,0 +1,94 @@
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box {
+    position: relative;
+    background: #f3f3f3;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    border: 0.1rem solid rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.products .box:hover {
+    transform: translateY(-10px);
+    background-color: #fafafa; /* Light background on hover */
+}
+
+.products .box:hover .icons {
+    top: 0;
+}
+
+.products .icons {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(243, 243, 243, 0.8);
+    gap: 1rem;
+    transition: top 0.4s ease;
+}
+
+.products .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color: #666;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+}
+
+.products .icons a:hover {
+    background-color: #ff6347; /* Change this to any color you want for hover */
+    color: white;
+}
+
+.products .img {
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.products .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .content {
+    padding: 1.5rem;
+}
+
+.products .content h3 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.products .content .price {
+    font-size: 2rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .products .img {
+        height: 12rem;
+    }
+}
