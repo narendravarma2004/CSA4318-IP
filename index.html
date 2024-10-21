@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRIS Vision - Login</title>
+    <title>CAKEIRIS - Login</title>
     <link rel="stylesheet" href="index.css">
     
     <script>
-        
         function validateForm() {
-            // Set the correct username and password
             const correctUsername = "cakeiris@gmail.com";
             const correctPassword = "123";
-            
-            // Get the values entered in the form
             const username = document.querySelector('input[name="username"]').value;
             const password = document.querySelector('input[name="password"]').value;
             
-            // Check if the entered username and password match the correct ones
             if (username === correctUsername && password === correctPassword) {
-                return true; // Allow form submission
+                return true;
             } else {
                 alert("Incorrect username or password. Please try again.");
-                return false; // Prevent form submission
+                return false;
             }
         }
     </script>
@@ -38,6 +33,7 @@
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
+    <button class="register-btn" onclick="window.location.href='register.html'">Register Now</button></p>
     </div>
 </body>
 </html>
